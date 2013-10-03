@@ -18,8 +18,16 @@ import math                     # makes the math.sqrt function available
 
 print "Problem 1 solution follows:"
 
-pint "Hello World!"
+# x2-5.86 x+ 8.5408
+a = 1
+b = -5.86
+c = 8.5408
 
+root1 = (-b + math.sqrt(b ** 2 - 4 * a * c))/2 * a
+root2 = (-b - math.sqrt(b ** 2 - 4 * a * c))/2 * a
+
+print root1
+print root2
 
 ###
 ### Problem 2
@@ -27,8 +35,13 @@ pint "Hello World!"
 
 print "Problem 2 solution follows:"
 
-# ... write your code and comments here (and remove this line)
-
+import hw1_test
+print hw1_test.a
+print hw1_test.b
+print hw1_test.c
+print hw1_test.d
+print hw1_test.e
+print hw1_test.f
 
 ###
 ### Problem 3
@@ -36,6 +49,8 @@ print "Problem 2 solution follows:"
 
 print "Problem 3 solution follows:"
 
+boo = ((hw1_test.a and hw1_test.b) or (not hw1_test.c) and not (hw1_test.d or hw1_test.e or hw1_test.f))
+print str(boo)
 # ... write your code and comments here (and remove this line)
 
 
@@ -43,4 +58,4 @@ print "Problem 3 solution follows:"
 ### Collaboration
 ###
 
-# ... List your collaborators here, as a comment (on a line starting with "#").
+# Hannah Spencer
