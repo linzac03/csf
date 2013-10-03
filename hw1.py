@@ -51,9 +51,10 @@ print "Problem 3 solution follows:"
 
 boo = ((hw1_test.a and hw1_test.b) or (not hw1_test.c) and not (hw1_test.d or hw1_test.e or hw1_test.f))
 print str(boo)
-# ... write your code and comments here (and remove this line)
 
 
+# Reflection: Can't stop thinking about cheese, but everything was most definitely in the readings, tutorials, and lecture.
+# This assignment took about 20 minutes I think
 ###
 ### Collaboration
 ###
