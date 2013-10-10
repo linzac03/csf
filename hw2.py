@@ -20,8 +20,10 @@
 print "Problem 1 solution follows:"
 import hw2_test
 x = 0
-while (x < hw2_test.n):
-    x = x + (x + 1)
+y = 0
+while (y <= hw2_test.n):
+    x = x + y
+    y = y + 1
 print x 
 
 # ... write your code and comments here (and remove this line)
@@ -34,7 +36,13 @@ print x
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 2 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+
+for x in range(2,11):
+    print (1.0 / x)
+      
+
+
+
 
 
 ###
@@ -44,6 +52,10 @@ print "Problem 2 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 3 solution follows:"
 
+n = 10 
+triangular = 0
+for i in range(1,n):
+    triangular = 
 # ... write your code and comments here (and remove this line)
 
 ###
@@ -77,8 +89,7 @@ print "Problem 6 solution follows:"
 ### Collaboration
 ###
 
-# ... List your collaborators and other sources of help here (websites, books, etc.),
-# ... as a comment (on a line starting with "#").
+# lessea24, kevin
 
 ###
 ### Reflection

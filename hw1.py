@@ -23,8 +23,8 @@ a = 1
 b = -5.86
 c = 8.5408
 
-root1 = (-b + math.sqrt(b ** 2 - 4 * a * c))/2 * a
-root2 = (-b - math.sqrt(b ** 2 - 4 * a * c))/2 * a
+root1 = (-b + math.sqrt(b ** 2 - 4 * a * c))/(2 * a)
+root2 = (-b - math.sqrt(b ** 2 - 4 * a * c))/(2 * a)
 
 print root1
 print root2
