@@ -15,10 +15,10 @@
 ###
 
 # DO NOT CHANGE THE FOLLOWING LINE
-
+import hw2_test
 
 print "Problem 1 solution follows:"
-import hw2_test
+
 x = 0
 y = 0
 while (y <= hw2_test.n):
@@ -37,7 +37,7 @@ print x
 print "Problem 2 solution follows:"
 
 
-for x in range(2,11):
+for x in range(2,11): ##Use 11 to include 10
     print (1.0 / x)
       
 
@@ -52,11 +52,13 @@ for x in range(2,11):
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 3 solution follows:"
 
-n = 10 
+n = 10
 triangular = 0
-for i in range(1,n):
-    triangular = 
-# ... write your code and comments here (and remove this line)
+for i in range(0,n+1):
+    triangular = triangular + i 
+triangular = triangular + n#n was not included in the scope of i
+print "Triangular number", n, "via loop:",triangular
+print "Triangular number", n, "via formula:", (n * (n + 1) / 2)        
 
 ###
 ### Problem 4
@@ -64,6 +66,13 @@ for i in range(1,n):
 
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 4 solution follows:"
+
+n = 10
+fact = 1
+for i in range(1,n+1): ##oh
+    fact = i * fact
+print fact
+print 1*2*3*4*5*6*7*8*9*10
 
 # ... write your code and comments here (and remove this line)
 
@@ -74,6 +83,24 @@ print "Problem 4 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 5 solution follows:"
 
+
+#for n in range(0,numlines+1):
+ #   for i in range(0,numlines+1):
+  #      #i = fac * n 
+   # n = numlines - n
+    #print i
+    #print n
+numlines = 10
+fac = 1
+for n in range(numlines):
+    #n = numlines - n
+           
+    for i in range (numlines - n):
+        fac = i * fac
+    print fac ##HELP <('^'>)
+    #print i
+    #print n
+
 # ... write your code and comments here (and remove this line)
 
 ###
@@ -82,6 +109,14 @@ print "Problem 5 solution follows:"
 
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 6 solution follows:"
+p = 0
+for n in range (1,10):
+    x = 1.0 / n
+    #print x
+    #for x in range (2):
+        #if x <= 1:
+    p = p + x
+print p
 
 # ... write your code and comments here (and remove this line)
 
