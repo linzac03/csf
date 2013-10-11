@@ -56,9 +56,10 @@ n = 10
 triangular = 0
 for i in range(0,n+1):
     triangular = triangular + i 
-triangular = triangular + n#n was not included in the scope of i
+#v
 print "Triangular number", n, "via loop:",triangular
 print "Triangular number", n, "via formula:", (n * (n + 1) / 2)        
+#v --> had triangular = triangular + n while n was not included in the scope of i
 
 ###
 ### Problem 4
@@ -69,12 +70,12 @@ print "Problem 4 solution follows:"
 
 n = 10
 fact = 1
+k = 1*2*3*4*5*6*7*8*9*10
 for i in range(1,n+1): ##oh
     fact = i * fact
-print fact
-print 1*2*3*4*5*6*7*8*9*10
+print "The product of all the integers up to n via loop: %s and via multiplication: %s." % (str(fact), str(k))
+ 
 
-# ... write your code and comments here (and remove this line)
 
 ###
 ### Problem 5
@@ -82,26 +83,25 @@ print 1*2*3*4*5*6*7*8*9*10
 
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 5 solution follows:"
-
-
 #for n in range(0,numlines+1):
- #   for i in range(0,numlines+1):
-  #      #i = fac * n 
-   # n = numlines - n
-    #print i
-    #print n
+#    for i in range(0,numlines+1):
+#        i = fac * n 
+#    n = numlines - n
+#    print i
+#    print n
+    
 numlines = 10
-fac = 1
+fac = 0
 for n in range(numlines):
-    #n = numlines - n
-           
-    for i in range (numlines - n):
-        fac = i * fac
-    print fac ##HELP <('^'>)
+    n = numlines - n
+    for i in range (n + 1):##if (x,n + 1) for any number x the output increases
+        fac = i * (fac + 1) ##ouputs all 0's if there isn't a +1
+    print fac ##unable to find bug, won't behave like problem 4
+    
+     ##HELP <('^'>)
     #print i
     #print n
 
-# ... write your code and comments here (and remove this line)
 
 ###
 ### Problem 6
@@ -110,26 +110,33 @@ for n in range(numlines):
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 6 solution follows:"
 p = 0
-for n in range (1,10):
+y = 10
+for n in range (1,y-1):
     x = 1.0 / n
-    #print x
-    #for x in range (2):
-        #if x <= 1:
     p = p + x
 print p
 
-# ... write your code and comments here (and remove this line)
+##i don't know what i did or why i changed the ranged to (1,y-1)
 
 ###
 ### Collaboration
 ###
 
-# lessea24, kevin
+# lessea24, kevin, hannah
 
 ###
 ### Reflection
 ###
+#https://wiki.python.org/moin/ForLoop
+#http://stackoverflow.com/questions/17157275/walking-through-nested-for-statements
+#http://codeacademy.com (Python, Strings & Console Output)
+#http://www.greenteapress.com/thinkpython/thinkpython.pdf
+#ICPUP, 3.2
+#
+#This assignment was hard, I'm not sure how long this took worked on it in lab and all this morning.
+#I don't know if it was the concussion I had or if I've just been slacking.
+#After reading chaptes 7 and 10 I felt I was capable enough for most everything,
+#except problems 5 and 6. Nesting the for loops is something that I can't figure
+#out on my own, I guess I just don't understand exactly how an inner for statements behaves inside an outer for statement.
+#
 
-# ... Write how long this assignment took you, including doing all the readings
-# ... and tutorials linked to from the homework page. Did the readings, tutorials,
-# ... and lecture contain everything you needed to complete this assignment?
