@@ -133,9 +133,10 @@ print p
 #http://www.greenteapress.com/thinkpython/thinkpython.pdf
 #ICPUP, 3.2
 #
-#This assignment was hard, I'm not sure how long this took worked on it in lab and all this morning.
+#This assignment was hard, I'm not sure how long this took.
+#I worked on it in lab and all this morning.
 #I don't know if it was the concussion I had or if I've just been slacking.
-#After reading chaptes 7 and 10 I felt I was capable enough for most everything,
+#After reading chapters 7 and 10 I felt I was capable enough for most everything,
 #except problems 5 and 6. Nesting the for loops is something that I can't figure
 #out on my own, I guess I just don't understand exactly how an inner for statements behaves inside an outer for statement.
 #
