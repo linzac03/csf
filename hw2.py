@@ -73,7 +73,7 @@ fact = 1
 k = 1*2*3*4*5*6*7*8*9*10
 for i in range(1,n+1): ##oh
     fact = i * fact
-print "The product of all the integers up to n via loop: %s and via multiplication: %s." % (str(fact), str(k))
+print "The product of all the integers up to %s via loop: %s and via multiplication: %s." % (str(n), str(fact), str(k))
  
 
 
@@ -90,15 +90,17 @@ print "Problem 5 solution follows:"
 #    print i
 #    print n
     
+
 numlines = 10
-fac = 0
-for n in range(numlines):
-    n = numlines - n
-    for i in range (n + 1):##if (x,n + 1) for any number x the output increases
-        fac = i * (fac + 1) ##ouputs all 0's if there isn't a +1
-    print fac ##unable to find bug, won't behave like problem 4
-    
-     ##HELP <('^'>)
+fact = 1   
+p = numlines
+for n in range(1,numlines):
+    fact = fact * (n + 1)
+print fact   
+for i in range(1,numlines+1):
+    fact = fact / (i + 1)
+    print fact
+##HELP <('^'>)
     #print i
     #print n
 
@@ -114,7 +116,7 @@ y = 10
 for n in range (1,y-1):
     x = 1.0 / n
     p = p + x
-print p
+print "e = "+str(p)
 
 ##i don't know what i did or why i changed the ranged to (1,y-1)
 
