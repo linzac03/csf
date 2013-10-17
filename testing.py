@@ -8,7 +8,7 @@
 
 import lab2
 
-n = lab2.n
+n = lab2_n
 x = 1
 while (x < n+1):
     print "Hello World"
