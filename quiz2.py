@@ -1,0 +1,15 @@
+import lab2
+
+def ine(x):
+  if x > float(50):
+    return 'Greater than 50'
+  elif x < float(50):
+    return 'Less than 50'
+  else:
+    return 'Equal to 50'
+
+p = float(lab2.n)
+q = ine(p)
+
+print q
+print p
