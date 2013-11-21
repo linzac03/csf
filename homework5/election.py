@@ -60,15 +60,22 @@ def most_recent_poll_row(poll_rows, pollster, state):
     specified pollster and state. If no such row exists, returns None.
     """
     #TODO: Implement this function
-    
+    mostrecent = {}
+    d2 = "Jan 01 1111"
     for row in poll_rows:
-        n = 1
-        row2 = poll_rows[n]
-        if earlier_date(row["Date"],row2["Date"]) == True:
-            return row
+        d = row["Date"]
+        a = earlier_date(d,d2)
+        if row["Pollster"] == pollster and row["State"] == state and a == False:
+            d2 = row["Date"]
         else:
-            return None 
-        n = n + 1
+            mostrecent = row
+            print "ZACH FUCKING SUCKS AT THIS"
+            break
+    print mostrecent 
+            
+            
+        
+        
     
 
 
@@ -82,13 +89,18 @@ def unique_column_values(rows, column_name):
     containing all values in that column.
     """
     #TODO: Implement this function
-    pass
+    uniques = []
+    for row in rows:
+        uniques.append(row[column_name])
+    return "% values: " + str(uniques) % (column_name)
+    
 
 def pollster_predictions(poll_rows):
     """
     Given a list of poll data rows, returns pollster predictions.
     """
     #TODO: Implement this function
+    
     pass
 
             
