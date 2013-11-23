@@ -69,7 +69,6 @@ def most_recent_poll_row(poll_rows, pollster, state):
             d2 = row["Date"]
         else:
             mostrecent = row
-            print "ZACH FUCKING SUCKS AT THIS"
             break
     print mostrecent 
             
