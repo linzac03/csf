@@ -12,7 +12,7 @@ if series == 'fibonacci':
         fib = a + b
         a = b
         b = fib
-        i = i +1
+        i = i + 1
     print fib
 elif series == 'sum':
     while i < n:
