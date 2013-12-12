@@ -34,4 +34,5 @@ def friends_of_friends(graph, user):
 p = ("yes", "no")
 
 ls = [1,2,3,4,5,6]
+diction = {"can":1, "super":2}
 
